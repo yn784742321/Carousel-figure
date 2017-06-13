@@ -1,7 +1,5 @@
 # Carousel-figure
-
 *布局像demoIndex.html里的一样,类名也要一样
-
 .content里的内容：
     可以是<img>,用于轮播;
     可以是<div>,可以删除部分函数用于缓动切换div内容
