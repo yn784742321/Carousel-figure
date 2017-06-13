@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缓动轮播图</title>
+    <script type="text/javascript" src=jquery-3.2.1.min.js></script>
+    <script type="text/javascript" src=tween.js></script>
+    <style>
+   	 	*{
+			margin: 0;
+			padding: 0;
+    	}
+    	body{
+    		overflow: hidden;
+    	}
+        ._container{
+        	width: 1192px;
+			margin: 30px auto 0 auto;
+			overflow: hidden;
+			position: relative;
+        }
+        ._wrap_content{
+        	width: 5960px;
+            position: relative;/*要给定位*/
+        }
+        ._wrap_content div._content{
+        	float: left;
+        }
+        ._wrap_content div._content img{
+        	width: 1192px;
+        	border: none;
+        }
+        ._container span._sl{
+            display:block;
+            width:26px;
+            height:36px;
+            background:rgba(0,0,0,0.2);
+            position:absolute;
+            left:0;
+            top:45%;
+            z-index:200;
+            cursor:pointer;
+            text-align:center;
+            display:none;
+            line-height: 36px;
+        }
+        ._container span._sr{
+            display:block;
+            width:26px;
+            height:36px;
+            background:rgba(0,0,0,0.2);
+            position:absolute;
+            right:0;
+            top:45%;
+            z-index:200;
+            cursor:pointer;
+            text-align:center;
+            display:none;
+            line-height: 36px;
+        }
+        ._container div._wrap_dot{
+            padding: 0 10px;
+            height:20px;
+            background: rgba(255,255,255,0.6);
+            position: absolute;
+            left:50%;
+            margin-left: -5%;
+            bottom: 20px;
+            border-radius: 10px;
+            z-index:200;
+        }
+        ._container i._dot{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            cursor: pointer;
+            background:rgba(0,0,0,0.2);
+            margin: 0 5px;
+        }
+        ._container i._dotBg{
+            background: rgba(220,73,73,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="_container">
+    	<div class="_wrap_content">
+            <!-- <div class="_content"><img src="images/4.jpg"></div> -->
+			<div class="_content"><img src="images/1.jpg"></div>
+			<div class="_content"><img src="images/2.jpg"></div>
+			<div class="_content"><img src="images/3.jpg"></div>
+			<div class="_content"><img src="images/4.jpg"></div>
+            <div class="_content"><img src="images/1.jpg"></div>
+		</div>
+    </div>
+</body>
+</html>
